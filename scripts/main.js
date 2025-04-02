@@ -72,3 +72,50 @@ const departments = {
 }
 
 console.log(departments);
+
+// Opdracht 1a //
+
+const employeesSales = departments.sales.numberOfEmployees;
+
+console.log(`De afdeling Sales heeft ${employeesSales} medewerkers`)
+
+// Opdracht 1b //
+
+const marketingDescription = departments.marketing.description;
+
+console.log(`Marketing is een leuke afdeling om te werken. ${marketingDescription}`)
+
+// Opdracht 1c //
+
+const employeesCustomerService = departments["customer-service"].numberOfEmployees;
+
+console.log(`De afdeling Customer Service heeft ${employeesCustomerService} medewerkers`);
+
+// Opdracht 1d //
+
+const descriptionSales = departments.sales.jobs[1].description;
+
+console.log(`Sales is een uitdagende afdeling om te werken als Verkoopmanager. ${descriptionSales}`)
+
+// Opdracht 2a //
+
+const departmentChoice = prompt('Over welke afdeling wil je meer informatie? Kies uit: [marketing / sales / customer-service]');
+console.log(departmentChoice);
+
+// Opdracht 2b + 2c //
+
+switch (departmentChoice) {
+    case 'marketing':
+        console.log(`je koos ${departmentChoice}. ${departments.marketing.description}`);
+        break;
+    case 'sales':
+        console.log(`je koos ${departmentChoice}. ${departments.sales.description}`);
+        break;
+    case 'customer-service':
+        console.log(`je koos ${departmentChoice}. ${departments['customer-service'].description}`);
+        break;
+    default:
+        console.error(`Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.`);
+        break;
+}
+
