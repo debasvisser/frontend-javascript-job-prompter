@@ -107,16 +107,19 @@ console.log(departmentChoice);
 switch (departmentChoice) {
     case 'marketing':
         console.log(`Je koos ${departmentChoice}. ${departments.marketing.description}`);
+        document.getElementById('department-description').textContent = departments.marketing.description;
         break;
     case 'sales':
         console.log(`Je koos ${departmentChoice}. ${departments.sales.description}`);
+        document.getElementById('department-description').textContent = departments.sales.description;
         break;
     case 'customer-service':
         console.log(`Je koos ${departmentChoice}. ${departments['customer-service'].description}`);
+        document.getElementById('department-description').textContent = departments["customer-service"].description;
         break;
     default:
         console.error(`Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.`);
-        break;
+        document.getElementById('error-message').textContent = 'Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.';
 }
 
 // Opdracht 3a //
@@ -166,15 +169,23 @@ const functionChoice = prompt(`Je koos ${departmentChoice}. Over welke functie w
 switch (functionChoice) {
     case '0':
         console.log(`Je koos ${departments[departmentChoice].jobs[0].title}. Een uitdagende rol! ${departments[departmentChoice].jobs[0].title}`);
+        document.getElementById('role-title').textContent = departments[departmentChoice].jobs[0].title;
+        document.getElementById('role-description').textContent = departments[departmentChoice].jobs[0].description;
         break;
     case '1':
         console.log(`Je koos ${departments[departmentChoice].jobs[1].title}. Een uitdagende rol! ${departments[departmentChoice].jobs[1].description}`);
+        document.getElementById('role-title').textContent = departments[departmentChoice].jobs[1].title;
+        document.getElementById('role-description').textContent = departments[departmentChoice].jobs[1].description;
         break;
     case '2':
         console.log(`Je koos ${departments[departmentChoice].jobs[2].title}. Een uitdagende rol! ${departments[departmentChoice].jobs[2].description}`);
+        document.getElementById('role-title').textContent = departments[departmentChoice].jobs[2].title;
+        document.getElementById('role-description').textContent = departments[departmentChoice].jobs[2].description;
         break;
     case '3':
         console.log(`Je koos ${departments[departmentChoice].jobs[3].title}. Een uitdagende rol! ${departments[departmentChoice].jobs[3].description}`);
+        document.getElementById('role-title').textContent = departments[departmentChoice].jobs[3].title;
+        document.getElementById('role-description').textContent = departments[departmentChoice].jobs[3].description;
         break;
     default:
         console.log('Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.');
