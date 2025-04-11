@@ -157,18 +157,18 @@ console.log(`${departmentChoice} is een leuke afdeling om te werken. Er werken o
 
 // Opdracht 4b //
 
-const functionChoice = prompt(`Je koos ${departmentChoice}. Over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in.\n`
-    + `0: ${departments[departmentChoice].jobs[0].title}\n`
-    + `1: ${departments[departmentChoice].jobs[1].title}\n`
-    + `2: ${departments[departmentChoice].jobs[2].title}\n`
-    + `3: ${departments[departmentChoice].jobs[3].title}`
+const functionChoice = prompt(`Je koos ${departmentChoice}. Over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in.
+    0: ${departments[departmentChoice].jobs[0].title} 
+    1: ${departments[departmentChoice].jobs[1].title}
+    2: ${departments[departmentChoice].jobs[2].title}
+    3: ${departments[departmentChoice].jobs[3].title}`
 );
 
     console.log(functionChoice);
 
 switch (functionChoice) {
     case '0':
-        console.log(`Je koos ${departments[departmentChoice].jobs[0].title}. Een uitdagende rol! ${departments[departmentChoice].jobs[0].title}`);
+        console.log(`Je koos ${departments[departmentChoice].jobs[0].title}. Een uitdagende rol! ${departments[departmentChoice].jobs[0].description}`);
         document.getElementById('role-title').textContent = departments[departmentChoice].jobs[0].title;
         document.getElementById('role-description').textContent = departments[departmentChoice].jobs[0].description;
         break;
