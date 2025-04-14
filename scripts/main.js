@@ -122,13 +122,10 @@ switch (departmentChoice) {
         document.getElementById('error-message').textContent = 'Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.';
 }
 
-<<<<<<< HEAD
 // if (departmentChoice === 'marketing' || departmentChoice === 'sales' || departmentChoice === 'customer-service') {
 //     console.log(`${departmentChoice} is een leuke afdeling om te werken. Er werken op dit moment ${departments[departmentChoice].numberOfEmployees} medewerkers.`);
 // }
 
-=======
->>>>>>> 2b2724aae7ea965bba46a74c1c01596e990e5762
 // Opdracht 3a //
 
 // const functionChoice = prompt(`Je koos marketing. Over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in.\n` +
@@ -199,7 +196,6 @@ switch (functionChoice) {
         document.getElementById('error-message').textContent = 'Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.';
 }
 
-<<<<<<< HEAD
 // het zou korter kunnen door het zo te doen:
 
 // switch (functionChoice) {
@@ -219,7 +215,3 @@ switch (functionChoice) {
 //         console.log('Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.');
 //         document.getElementById('error-message').textContent = 'Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.';
 // }
-=======
-// document.getElementById('role-title').textContent = 'Bas!';
-// document.getElementById('department-description').textContent = 'lasagna';
->>>>>>> 2b2724aae7ea965bba46a74c1c01596e990e5762
